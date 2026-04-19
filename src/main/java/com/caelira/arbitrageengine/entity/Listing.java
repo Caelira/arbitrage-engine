@@ -48,6 +48,12 @@ public class Listing {
         this.rawPayload = rawPayload;
     }
 
+    public Listing(BigDecimal listedPrice, String listingUrl, String cameraModel) {
+        this.listedPrice = listedPrice;
+        this.listingUrl = listingUrl;
+        this.cameraModel = cameraModel;
+    }
+
     public Long getListingId() {
         return listingId;
     }

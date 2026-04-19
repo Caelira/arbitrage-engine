@@ -17,7 +17,7 @@ public class SecurityConfig {
 
         security.authorizeHttpRequests( (requests) ->
                 requests.requestMatchers("/css/**", "/js/**", "/images/**").permitAll()
-                        .requestMatchers("/").permitAll()
+                        .requestMatchers("/", "/saveRule", "/createARule", "/deals").permitAll()
         );
 
         return  security.build();
